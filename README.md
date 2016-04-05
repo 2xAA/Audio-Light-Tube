@@ -8,7 +8,7 @@ Audio reactive lights using Teensy 3.2 with 4 audio reactive modes and 2 strobe 
 
 ## Hardware Requirements
 
-* Addressable LED Strip [WS2812 or WS2812B] (like [this one](http://www.banggood.com/5M-WS2812B-5050-RGB-Waterproof-IP67-150-LED-Strip-Light-Dream-Color-Changing-Individual-Addressable-DC-5V-p-998626.html))
+* Addressable LED Strip (WS2812 or WS2812B) (like [this one](http://www.banggood.com/5M-WS2812B-5050-RGB-Waterproof-IP67-150-LED-Strip-Light-Dream-Color-Changing-Individual-Addressable-DC-5V-p-998626.html))
 * [Teensy 3.2](https://www.pjrc.com/store/teensy32.html)
 * 1x Push Button
 * 1x 2.2K Resistor
