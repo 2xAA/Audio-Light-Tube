@@ -26,6 +26,8 @@ Audio reactive lights using Teensy 3.2 with 4 audio reactive modes and 2 strobe 
 2. Build the [audio filter circuit](http://www.pjrc.com/teensy/gui/img/adccircuit.png) as found in the Teensy [Audio System Design Tool](http://www.pjrc.com/teensy/gui/?info=AudioInputAnalog) on the veroboard
 3. Build a simple pushbutton circuit (example [here](https://www.arduino.cc/en/Tutorial/Button))
 4. Plug everything together (pushbutton to pin 2, LED strip to pin 6) and you should be set!
+5. 
+(If you need more detailed instructions or I've missed out something crucial, please flag an issue and I'll get on it asap)
 
 ## Videos
 
