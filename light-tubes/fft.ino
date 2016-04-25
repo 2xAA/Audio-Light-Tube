@@ -5,13 +5,13 @@ void fftBlink() {
     float n;
     int i;
     
-    for (i=0; i < 60; i+=1) {
-      n = fft1.read(map(i, 0, 60, 0, NUMPIXELS));
+    for (i=0; i < NUMPIXELS; i+=1) {
+      n = fft1.read(map(i, 0, NUMPIXELS, 0, NUMPIXELS));
 
       float brightness = mapfloat(n, 0, 1.0, 0, MAXBRIGHTNESS);
       brightness = brightness/100.0;
       float saturation = 1;
-      int hue = map(map(i, 0, 60, 0, NUMPIXELS), 0, 60, 0, 360); // Number between 0 and 360
+      int hue = map(map(i, 0, NUMPIXELS, 0, NUMPIXELS), 0, NUMPIXELS, 0, 360); // Number between 0 and 360
       
       long color = HSBtoRGB(hue, saturation, brightness); 
   
@@ -27,9 +27,9 @@ void fftBlink() {
         Serial.print("  -  "); // don't print "0.00"
       }
       if (n >= 0.01) {
-        pixels.setPixelColor(map(i, 0, 60, 0, NUMPIXELS), pixels.Color(red, green, blue));
+        pixels.setPixelColor(map(i, 0, NUMPIXELS, 0, NUMPIXELS), pixels.Color(red, green, blue));
       } else {
-        pixels.setPixelColor(map(i, 0, 60, 0, NUMPIXELS), pixels.Color(0, 0, 0));
+        pixels.setPixelColor(map(i, 0, NUMPIXELS, 0, NUMPIXELS), pixels.Color(0, 0, 0));
       }
     }
     pixels.show();
